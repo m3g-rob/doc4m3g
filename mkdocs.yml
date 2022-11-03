@@ -1,0 +1,47 @@
+site_name: Get started with M<sup>3</sup>G API v1.0
+
+nav:
+  - Home: index.md
+  - Short intro to M<sup>3</sup>G API: intro.md
+  - <i>curl</i> examples:
+          - Download data from M<sup>3</sup>G: curl_download.md
+          - Upload data to M<sup>3</sup>G: curl_upload.md
+  - <i>python</i> examples:
+          - Use <i>python requests</i> library: python.md
+  - Notes:
+          - M<sup>3</sup>G access token: authorization.md
+          - Disclaimer: disclaimer.md
+
+
+extra:
+  social:
+    - icon: fontawesome/solid/code
+      link: https://gnss-metadata.eu/__test2/site/api-docs
+      name: M3G Swagger UI
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/be_GNSS
+      name: Tweets @be_GNSS
+
+
+
+theme:
+    name: 'material'
+    logo: 'images/m3g.png'
+    favicon: 'images/m3g.png'
+    palette:
+      - scheme: 'preference'
+        primary: light blue
+        accent:  blue
+    font:
+      text: 'Open Sans'
+      code: 'Courier Prime'
+    features:
+      - toc.integrate
+
+
+extra_css:
+  - 'css/extra.css'
+
+markdown_extensions:
+  - attr_list
+  - codehilite
