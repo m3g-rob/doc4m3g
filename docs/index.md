@@ -10,4 +10,5 @@ You can start by:
 
 If you are familiar with RESTful API, go directly to the [M<sup>3</sup>G Swagger UI](https://gnss-metadata.eu/site/api-docs){:target="_blank"} (see below) to visualize and interact with the API.
 
-<iframe style="width:100%;height:400px" src="https://gnss-metadata.eu/site/api-docs"></iframe>
+<a href="https://gnss-metadata.eu/site/api-docs" target="_blank">![figure](images/SwaggerUI.png)</a>
+
