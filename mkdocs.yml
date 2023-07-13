@@ -2,14 +2,14 @@ site_name: Get started with M<sup>3</sup>G API v1.0
 
 nav:
   - Home: index.md
-  - Short intro to M<sup>3</sup>G API: intro.md
+  - Short intro to M3G API: intro.md
   - <i>curl</i> examples:
-          - Download data from M<sup>3</sup>G: curl_download.md
-          - Upload data to M<sup>3</sup>G: curl_upload.md
+          - Download data from M3G: curl_download.md
+          - Upload data to M3G: curl_upload.md
   - <i>python</i> examples:
           - Use <i>python requests</i> library: python.md
   - Notes:
-          - M<sup>3</sup>G access token: authorization.md
+          - M3G access token: authorization.md
           - Disclaimer: disclaimer.md
 
 
