@@ -24,7 +24,7 @@ def url(path):
 #get info about a site log giventhe 9-char id:
 def get_sitelog(station_id):
     return requests.get(url('sitelog/view?id={}'.format(station_id)),headers=headers)
-#update a record in the site log (the firmware version in this case) given the 9-char id:
+#update (see WARNING) a record in the site log (the firmware version in this case) given the 9-char id:
 def update_firmware(station_id, updateMadeBy, changedTo, datetimeISO, datetimeISOfuture):
     url = url('sitelog/firmware-change?id={}'.format(station_id))
     return requests.put(url, json={
@@ -35,6 +35,9 @@ def update_firmware(station_id, updateMadeBy, changedTo, datetimeISO, datetimeIS
         }, headers=headers)
 ```
 ## Update the sitelog with a new firmware
+!!! WARNING 
+
+    The update operation will directly modify the site log and may trigger an immediate update of the data published on the M<sup>3</sup>G system. Please make sure that the information is correct before proceeding. If you only want to test the functionality, please use the playground/test (`https://gnss-metadata.eu/__test/v1`) environment instead.
 We then send the request to update the site log with the mandatory information:
 ```python
 my_update=update_firmware('BRUX00BEL','Carine Bruyninx', '5.3.1', '2020-09-04T11:50Z', '2020-09-04T11:51Z')
@@ -51,7 +54,7 @@ We might want to get the link to the updated site log:
 my_update.url
 ```
 ```
-'https://gnss-metadata.eu/__test/v1/sitelog/view?id=BRUX00BEL'
+'https://gnss-metadata.eu/v1/sitelog/view?id=BRUX00BEL'
 ```
 or retrieve the info about the sitelog of our station (BRUX00BEL)
 ```python
