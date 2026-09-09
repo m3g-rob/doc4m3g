@@ -16,7 +16,7 @@ One would need to pass some data, in json format e.g. stored in the file `firmwa
 
 ```JSON
 {
-    "updateMadeBy": "Carine Bruyninx",
+    "updateMadeBy": "GNSSatROB (gnss@oma.be)",
     "endOfTheLastSection": "2020-09-30T09:35Z",
     "changedTo": "5.3.1",
     "startOfTheNewSection": "2020-09-30T09:36Z"

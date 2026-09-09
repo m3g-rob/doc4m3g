@@ -40,7 +40,7 @@ def update_firmware(station_id, updateMadeBy, changedTo, datetimeISO, datetimeIS
     The update operation will directly modify the site log and may trigger an immediate update of the data published on the M<sup>3</sup>G system. Please make sure that the information is correct before proceeding. If you only want to test the functionality, please use the playground/test (`https://gnss-metadata.eu/__test/v1`) environment instead.
 We then send the request to update the site log with the mandatory information:
 ```python
-my_update=update_firmware('BRUX00BEL','Carine Bruyninx', '5.3.1', '2020-09-04T11:50Z', '2020-09-04T11:51Z')
+my_update=update_firmware('BRUX00BEL','GNSSatROB (gnss@oma.be)', '5.3.1', '2020-09-04T11:50Z', '2020-09-04T11:51Z')
 my_update.status_code
 ```
 The latter will return as a response one of HTTP status codes, as we mentioned before:
