@@ -738,7 +738,7 @@ One could write a couple of functions on the fly using the <em>requests</em> mod
 <p>The update operation will directly modify the site log and may trigger an immediate update of the data published on the M<sup>3</sup>G system. Please make sure that the information is correct before proceeding. If you only want to test the functionality, please use the playground/test (<code>https://gnss-metadata.eu/__test/v1</code>) environment instead.</p>
 </div>
 <p>We then send the request to update the site log with the mandatory information:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">my_update</span><span class="o">=</span><span class="n">update_firmware</span><span class="p">(</span><span class="s1">&#39;BRUX00BEL&#39;</span><span class="p">,</span><span class="s1">&#39;Carine Bruyninx&#39;</span><span class="p">,</span> <span class="s1">&#39;5.3.1&#39;</span><span class="p">,</span> <span class="s1">&#39;2020-09-04T11:50Z&#39;</span><span class="p">,</span> <span class="s1">&#39;2020-09-04T11:51Z&#39;</span><span class="p">)</span>
+<div class="codehilite"><pre><span></span><code><span class="n">my_update</span><span class="o">=</span><span class="n">update_firmware</span><span class="p">(</span><span class="s1">&#39;BRUX00BEL&#39;</span><span class="p">,</span><span class="s1">&#39;GNSSatROB (gnss@oma.be)&#39;</span><span class="p">,</span> <span class="s1">&#39;5.3.1&#39;</span><span class="p">,</span> <span class="s1">&#39;2020-09-04T11:50Z&#39;</span><span class="p">,</span> <span class="s1">&#39;2020-09-04T11:51Z&#39;</span><span class="p">)</span>
 <span class="n">my_update</span><span class="o">.</span><span class="n">status_code</span>
 </code></pre></div>
 
